@@ -1,0 +1,22 @@
+MFTA Orders WebService
+======================
+I kind of tackled this task a little out of order.  I created the database 
+schema but never ran it against the CCRB database.  I just got the CCRB 
+credentials today. I instead created the a local mysql database and pointed the
+app at the table that I created. You'll have to created the tables yourself, 
+either that or I believe JPA/Hibernate will create the tables for you.  I also
+included a translation of the sql to dialect but it was auto generated.
+
+I created four entities: Customer, Item, Order and OrderItem.  Customer holds 
+basic customer information.  Item contains metadata about items.  Orders contains
+metadata about the order.  Finally there is OrderItems which is more of a relational
+connecting Orders to Items: its only relevant information is the quantity of items in
+order.  This is more of a hack since its really a relationship table but that was the 
+only way I could express that relationship. If you can find a better way to express 
+this relationship...  Also you might want to take a look at the table MFTA_MEMBER.
+
+There a repository for each of the four entities.  
+  
+
+
+
