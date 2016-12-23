@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="press_release" type="press_releaseType" />
+  <xsd:complexType name="press_releaseType">
+    <xsd:sequence>
+      <xsd:element name="info_type" type="xsd:int" />
+      <xsd:element name="press_release_guid" type="xsd:string" />
+      <xsd:element name="language" type="xsd:string" />
+      <xsd:element name="date" type="xsd:dateTime" />
+      <xsd:element name="pr_number" type="xsd:dateTime" />
+      <xsd:element name="official_title" type="xsd:string" />
+      <xsd:element name="permalink_name" type="xsd:string" />
+      <xsd:element name="brief_pr_title" type="xsd:string" />
+      <xsd:element name="paragraph" type="xsd:string" />
+      <xsd:element name="categories" type="xsd:string" />
+      <xsd:element name="photo_option" type="xsd:int" />
+      <xsd:element name="MediaContact" type="MediaContactType" />
+      <xsd:element name="PublicContact" type="PublicContactType" />
+      <xsd:element name="Link" type="LinkType" />
+      <xsd:element name="side_bar_conent" type="xsd:int" />
+      <xsd:element name="RelatedSound_Content" type="RelatedSound_ContentType" />
+      <xsd:element name="RelatedVideo_Content" type="xsd:string" />
+      <xsd:element name="content_type" type="xsd:string" />
+      <xsd:element name="Mobile_Options" type="xsd:string" />
+      <xsd:element name="Other" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RelatedSound_ContentType">
+    <xsd:sequence>
+      <xsd:element name="related_sound_source" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="LinkType">
+    <xsd:sequence>
+      <xsd:element name="link_text" type="xsd:string" />
+      <xsd:element name="link_url" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PublicContactType">
+    <xsd:sequence>
+      <xsd:element name="contact_person" type="xsd:string" />
+      <xsd:element name="agency_text_link" type="xsd:string" />
+      <xsd:element name="agency_link_url" type="xsd:string" />
+      <xsd:element name="phone" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="MediaContactType">
+    <xsd:sequence>
+      <xsd:element name="contact_person" type="xsd:string" />
+      <xsd:element name="agency_text_link" type="xsd:string" />
+      <xsd:element name="agency_link_url" type="xsd:string" />
+      <xsd:element name="phone" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
