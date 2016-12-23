@@ -6,7 +6,7 @@
 //
 
 
-package gov.nyc.doitt.pressreleases.jaxb;
+package gov.nyc.doitt.pressreleases.jaxb.pressrelease;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
